@@ -91,7 +91,9 @@ task.json
 }
 ```
 
-参考：
-作者：XE0CH47N
-链接：https://zhuanlan.zhihu.com/p/147366852
-来源：知乎
+参考资料：
+1. 挑把趁手的兵器——VSCode配置C/C++学习环境（小白向）
+    链接：https://zhuanlan.zhihu.com/p/147366852
+    
+2. vscode设置C/C++包含路径
+    https://linuxcpp.0voice.com/?id=122183

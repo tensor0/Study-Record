@@ -64,6 +64,9 @@ http://t.csdnimg.cn/GGba0
     # 创建成功后，该目录下会新增一个.git的隐藏文件夹，需要用"ls -a"才能看见
     # .git文件夹中的文件是对该仓库进行版本控制所必须的,是git仓库的重要组成部分，里面存放了git仓库的所有数据
     # 不要随意删除或修改.git文件夹中的内容(如果删除.git文件夹，则这个仓库也被删除掉)
+
+    # 以.为开头的文件夹是什么
+    https://www.zhihu.com/question/468366149/answer/1977282851
     ```
 5. git的工作区域和文件的状态
     git的本地数据分为三个区域：
@@ -102,3 +105,21 @@ http://t.csdnimg.cn/GGba0
     git diff
     ```
 9. 
+
+本文参考资料：
+1. git的安装与使用
+https://zhuanlan.zhihu.com/p/607970211
+
+2. 【【GeekHour】一小时Git教程】 https://www.bilibili.com/video/BV1HM411377j/?p=15&share_source=copy_web&vd_source=a87169b88877fd501e8ba925a0512fde
+
+3. 【Git/GitHub 及开源基础 | 实用技能拾遗第二讲 | 浙江大学竺可桢学院学业指导中心辅学精品课【直播回放】】
+(只看了开头一部分) https://www.bilibili.com/video/BV12u4y177vG/?share_source=copy_web&vd_source=a87169b88877fd501e8ba925a0512fde
+
+4. 【『教程』简单明了的Git入门】 https://www.bilibili.com/video/BV1Cr4y1J7iQ/?share_source=copy_web&vd_source=a87169b88877fd501e8ba925a0512fde
+
+
+其他资料(未参考但是有用)：
+1. 【Git基本原理介绍(1)——代码仓库的初始化】 https://www.bilibili.com/video/BV1TA411q75f/?share_source=copy_web&vd_source=a87169b88877fd501e8ba925a0512fde
+
+2. Pro-Git:(虽然没参考这个书籍但是可以用这个书籍对git的相关内容进行查阅)
+https://www.progit.cn/#_plumbing_porcelain

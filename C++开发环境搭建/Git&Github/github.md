@@ -22,14 +22,33 @@
     首先我们要先登录github，然后从github上仓库的Code按钮那里找到远程仓库的地址
     地址分为2种：
     1. 第一种是HTTPS URL
-        ```
+        ```shell
         # 输入以下命令将远程仓库的名字和地址匹配
         git remote add Mercury https://github.com/tensor0/Study-Record.git
 
         #此时再输入git remote 会弹出
         Mercury
 
-        #但是并不能对https的地址进行远程提交，因为
+        # 此时输入git push会弹出
+        # fatal: The current branch main has no upstream branch.
+        # git push --set-upstream Mercury main
+        # To have this happen automatically for branches without a tracking upstream, see 'push.autoSetupRemote' in 'git help config'.
+        # 意思是本地当前分支未设置上游分支，所以不知道把当前分支push到哪里去，所以应当设置当前分支的上游分支
+
+        #将本地当前分支的上游分支设置为 Mercury用户关联地址的main分支
+        git push -u Mercury main
+        ```
+        此时会弹出让你输入github用户名和密码，输入完成后会弹出
+        ```shell
+        info: please complete authentication in your browser...
+        To https://github.com/tensor0/Study-Record.git
+        ! [rejected]        main -> main (fetch first)
+        error: failed to push some refs to 'https://github.com/tensor0/Study-Record.git'
+        hint: Updates were rejected because the remote contains work that you do not
+        hint: have locally. This is usually caused by another repository pushing to
+        hint: the same ref. If you want to integrate the remote changes, use
+        hint: 'git pull' before pushing again.
+        hint: See the 'Note about fast-forwards' in 'git push --help' for details.
         ```
     2. 第二种是SSH URL
     ![Alt text](./picture/image.png)
@@ -43,3 +62,15 @@
 
     
     ```
+
+参考资料：
+1. 创建Git本地仓库并同步远程Github
+https://blog.csdn.net/qq_41185569/article/details/119731880
+
+2. 【『教程』一看就懂！Github基础教程】 https://www.bilibili.com/video/BV1hS4y1S7wL/?share_source=copy_web&vd_source=a87169b88877fd501e8ba925a0512fde
+
+3. git的安装与使用
+https://zhuanlan.zhihu.com/p/607970211
+
+4. github帮助文档
+https://docs.github.com/zh/get-started/using-git/pushing-commits-to-a-remote-repository
