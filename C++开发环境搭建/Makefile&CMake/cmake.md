@@ -1,4 +1,4 @@
-####makefile的由来
+#### makefile的由来
 1. 项目简单时，直接利用g++的语法编译即可
     ```shell
     # g++ 默认规则编译 目标文件名为main
@@ -52,6 +52,6 @@
 
     参考视频：
     【Makefile 20分钟入门，简简单单，展示如何使用Makefile管理和编译C++代码】 https://www.bilibili.com/video/BV188411L7d2/?share_source=copy_web&vd_source=a87169b88877fd501e8ba925a0512fde
-####cmake的由来
+#### cmake的由来
 1. 帮你根据不同平台及编译环境自动生成makefile
 2. 可以跨平台编译

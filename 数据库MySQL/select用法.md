@@ -1,5 +1,5 @@
-###基本的select语句
-####最基本的select ... from ... 结构 
+### 基本的select语句
+#### 最基本的select ... from ... 结构 
 (视频p15)
 ```sql
 # 选出employee表中的全部列
@@ -12,7 +12,7 @@ from employees
 1. '*'代表全部的(列名)字段名，from后面跟表名
 2. 不同的列名要用逗号隔开
 
-####修改为别名 列名+as+别名
+#### 修改为别名 列名+as+别名
 as全称：alias(别名)
 ```sql
 # 1. 用空格
@@ -33,7 +33,7 @@ from employees
 select employee_id,last_name ,salary as "annual sal"
 from employees
 ```
-####去除重复行 distinct+列名
+#### 去除重复行 distinct+列名
 ```
 # 查询员工表中一共有哪些部门id
 
@@ -47,21 +47,21 @@ from empolyees;
 ### distinct只能放在列名最前面，要不然对不上
 ###
 ```
-####空值：null
+#### 空值：null
 1. 空值是null
 2. null和0不是一回事
 3. null参与的运算，结果也一定为null
 
-####着重号 ``
+#### 着重号 ``
 1. 必须保证你的字段没有和关键字冲突，如果坚持使用，则需要用着重号``引起来
 
-####查询常数 
+#### 查询常数 
 1. 把想被查询的列名用常量代替，得到的是整列都是该常量
 ```sql
 select "尚硅谷",empolyee_id,last_name
 from employees;
 ```
-####显示表结构 describe+表名
+#### 显示表结构 describe+表名
 ```sql
 # 关键字
 describe empolyees;
@@ -71,7 +71,7 @@ desc deparments;
 ```
 
 
-####过滤数据(筛选出满足某些条件的行) select ... from ... where ...
+#### 过滤数据(筛选出满足某些条件的行) select ... from ... where ...
 ```
 # 过滤条件，声明在from结构的后面
 
@@ -81,10 +81,10 @@ from employees
 where last_name='King';
 ```
 
-###第4章_运算符
+### 第4章_运算符
 
 
-###第5章_排序与分页
+### 第5章_排序与分页
 1. 排序数据 order by
 ```sql
 # 排序
